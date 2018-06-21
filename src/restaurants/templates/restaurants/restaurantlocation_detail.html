@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title_tag %}Restaurant List||{{block.super}}{% endblock title_tag %}{% block content %}
+<h1>{{ object.name }}<small> {{ object.category }}</small></h1>
+<p>{{ object.location }}</p>
+<p>{{ object.timestamp }}, update {{object.updated|timesince }} ago</p>
+
+{% endblock %}

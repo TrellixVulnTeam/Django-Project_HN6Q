@@ -1,0 +1,17 @@
+
+<!doctype html>
+<html lang = en>
+<head>
+<title>{% block title_tag %}MyChoices.com{% endblock title_tag %}</title>
+</head>
+{% include 'snippets/css.html' %}
+<body>
+{% include 'snippets/nav.html' %}
+<div class='container'>
+{% block content %}
+Hey There
+{% endblock content %}
+</div>
+{% include 'snippets/js.html' %}
+</body>
+</html>
