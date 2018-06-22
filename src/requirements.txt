@@ -6,3 +6,4 @@ olefile==0.45.1
 Pillow==5.1.0
 psycopg2==2.7.4
 pytz==2018.4
+virtualenv==16.0.0

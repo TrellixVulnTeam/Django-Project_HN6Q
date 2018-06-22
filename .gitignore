@@ -1,11 +1,8 @@
+*.py[cod]
 .DS_Store
 bin/
 Include/
-Lib/
-Scripts/
-tcl/
-pip-selfcheck.json
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
+*.class
+pip-selfcheck.json

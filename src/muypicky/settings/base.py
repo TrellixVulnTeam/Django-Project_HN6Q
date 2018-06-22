@@ -17,21 +17,21 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com' # mail service smtp
-EMAIL_HOST_USER = 'username@gmail.com' # email id
-EMAIL_HOST_PASSWORD = 'password' #password
+EMAIL_HOST_USER = 'markstinson007@gmail.com' # email id
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD') #password
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'MyChoices Admin <username@gmail.com>'
 
 ADMINS = (
-    ('MyChoices', 'username@gmail.com'),
+    ('MyChoices', 'markstinson007@gmail.com'),
 )
 MANAGERS = ADMINS
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '0*j&=idfgoiudflkbmlsijofgl,dsfgplikdfspogi;ldfkgjoi-4b!d*1y^3l'
+SECRET_KEY = os.environ.get('SECRET_KEY','0*j&=idfgoiudflkbmlsietdsefdsfgplikdfspogi;ldfkgjoi-4b!d*1y^3l')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
